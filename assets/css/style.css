@@ -2,7 +2,12 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
-h1,
+h1{
+  text-align: center;
+  color:blue;
+  font-weight: bold;
+}
+
 h2,
 h3,
 h4,
@@ -10,4 +15,9 @@ h5,
 h6 {
   font-family: 'Merriweather', serif;
   font-weight: 700;
+}
+5daycard{
+background-color: #17a2b8;
+color: blue;
+
 }

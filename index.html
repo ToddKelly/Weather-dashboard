@@ -5,23 +5,54 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&family=Merriweather:wght@700&display=swap"
-    rel="stylesheet" />
-   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
   <div class="flex-row align-center justify-center min-100-vh bg-primary">
     <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
-      <h1 class="text-primary">Weather Dashboard</h1>
+      <h1>Weather Dashboard</h1>
       <form id="search-form" class="form w-100">
         <input id="search-input" class="form-input w-100" type="text" placeholder="Search for a city">
         <button class="btn btn-info btn-block">Search</button>
       </form>
     </div>
+
+    </form>
+    </div>
+    <div id="currentcities">
+    </div>
   </div>
+  <!-- Weather Forcast Column -->
+  <div class="col-md-9">
+    <div class="card daylycard">
+      <div class="card-header bg-primary text-white">
+        <h2 class="">Current Weather Conditions</h2>
+      </div>
+      <div class="card-body">
+        <div class="row" id="current">
+        </div>
+      </div>
+    </div>
+    <div class="card daylycard">
+      <div class="card-header bg-primary text-white">
+        <h2 class=".5daycard">5 Day Forcast</h2>
+      </div>
+      <div class="card-body">
+        <div class="row justify-content-md-center" id="sevenday">
 
-  <script src="./assets/js/script.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
-
 </html>
