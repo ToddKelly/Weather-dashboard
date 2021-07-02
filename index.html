@@ -4,55 +4,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets\css\style.css" />
+  <title>Weather Forcast API</title>
 </head>
+<header><b>Weather Dashboard</b></header>
 
 <body>
-  <div class="flex-row align-center justify-center min-100-vh bg-primary">
-    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
-      <h1>Weather Dashboard</h1>
-      <form id="search-form" class="form w-100">
-        <input id="search-input" class="form-input w-100" type="text" placeholder="Search for a city">
-        <button class="btn btn-info btn-block">Search</button>
-      </form>
-    </div>
-
-    </form>
-    </div>
-    <div id="currentcities">
-    </div>
-  </div>
-  <!-- Weather Forcast Column -->
-  <div class="col-md-9">
-    <div class="card daylycard">
-      <div class="card-header bg-primary text-white">
-        <h2 class="">Current Weather Conditions</h2>
-      </div>
-      <div class="card-body">
-        <div class="row" id="current">
+  <div class="container-fluid">
+    <div class="row ">
+      <div class="search col-3 m-4 bg-light">
+        <h3>Search for a City:</h3>
+        <div class="input-group mb-2"><i class="fa fa-cloud" aria-hidden="true"></i>
+          <input type="text" id='input-search' class="form-control" placeholder="Search Cities">
+          <button class="btn btn-outline-secondary" type="button" id="searchBtn">Search</button>
+        </div>
+        <div>
+          <div class='historyList'>
+            <ul class="list-group">
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="card daylycard">
-      <div class="card-header bg-primary text-white">
-        <h2 class=".5daycard">5 Day Forcast</h2>
+      <div class='col-6' id='currentWeather'><i class='fas fa-sun' style='font-size:48px'></i>
+        <h3>CURRENT WEATHER</h3>
       </div>
-      <div class="card-body">
-        <div class="row justify-content-md-center" id="sevenday">
-
-        </div>
+    </div>
+    <div class="row">
+      <div id='weather' class="col 4">
+        <h3 id='forecastHead'>5 Day Weather Forecast </h3>
+        <div class="forecast row">
+      </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="./assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <script src="assets\js\script.js"></script>
 </body>
+
 </html>
