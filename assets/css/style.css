@@ -4,33 +4,27 @@ body {
 
 h1{
   text-align: center;
-  color:blue;
+  color:rgb(17, 0, 255);
   font-weight: bold;
 }
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  background-color: lightgray;
+  background-color: rgb(155, 167, 180);
 }
 header {
   font-weight: bold;
   text-align: center;
-  background-color: black;
-  color: white;
-  font-size: 50px;
+  background-color: rgb(35, 53, 73);
+  color:rgb(220, 220, 235);
+  font-size: 70px;
   margin:0;
   padding:2%;
 }
 
 
-/* .input-group{
-  padding-left: 0px;
-  align-content: left;
-} */
-
 .card {
 
-box-shadow: 10px 10px 5px 0px rgba(238, 238, 238, 1);
 margin: 15px;
 align-content: center;
 padding-bottom: 10px;
@@ -38,34 +32,25 @@ padding-bottom: 10px;
 }
 
 .green {
-  background-color: green;
-}
-.yellow {
-  background-color: yellow;
+  background-color: rgb(126, 233, 4);
 }
 .orange{
   background-color: orange;
 }
 .red {
   background-color: red;
-}
-.purple {
-  background-color: purple;
 
 }
-
 
 .cityName{
   font-weight: bold;
   width: 60%;
 }
 
-
-
 #date{
   width:40%;
   float: right;
-  font-size: x-large;
+  font-size: 35px;
 }
 
 .forecast{
@@ -92,19 +77,17 @@ li {
  }
 
  #uvEl {
-   margin-left: 0%;
-   margin-right: 75%;
+   margin-left: 0px;
+   margin-right: 70px;
+   border: 90px;
  }
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-family: 'Merriweather', serif;
+h4 {
   font-weight: 700;
 }
 5daycard{
-background-color: #17a2b8;
-color: blue;
+  background-color: rgb(35, 53, 73);
+color: purple;
 
 }
